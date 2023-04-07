@@ -1,7 +1,7 @@
-# Marvel Comics & Characters Finder
+# Marvel Comics & Characters
 
-:small_yellow_diamond: SASS extends and mixins 
-:small_yellow_diamond: API REST.
-:small_yellow_diamond: sessionStorage y localStorage.
+## SASS extends and mixins 
+## API REST.
+## sessionStorage y localStorage.
 
-### :sparkles: [Check it out](https://laclaupau.github.io/comicsAPI/) :sparkles:
+### :sparkles: [Check out Marvel Comics](https://laclaupau.github.io/comicsAPI/) :sparkles:
