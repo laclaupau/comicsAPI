@@ -387,7 +387,7 @@ const showCharacters = (data, secondCollection = false) => {
   totalCount = data.data.total;
   totalResults.textContent = `${totalCount} RESULTS`;
   secondCollection 
-  ? titleResults.textContent = 'PCharacters' 
+  ? titleResults.textContent = 'Characters' 
   : titleResults.textContent = 'Results';
 
   createCharactersCards(characters);  
