@@ -1,0 +1,22 @@
+main {
+    margin: 60px 75px 80px;
+    position: relative;
+    @extend %flex-column;
+  
+    h2 {
+      margin-bottom: 20px;
+    }
+  
+    .title-container {
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    .total-results {
+      @extend %secondary-typography-style;
+    }
+  
+    @media (max-width: $medium-breakpoint) {
+      margin: 40px 20px;
+    }
+  }

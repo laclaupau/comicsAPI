@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <link rel="shortcut icon" type="image/ico" href="favicon.ico">
+
+  <title>Marvel Comics</title>
+</head>
+<body>
+
+  <header>
+    <div class="logo-container">
+      <h1 class="logo-title">MARVELMANIA</h1>
+    </div>
+    
+    <div class="hero-image">
+      <span role="img" aria-label="Marvel SuperHeroes"></span>
+    </div>      
+  </header>
+
+  <main>
+    <div class="title-container">
+      <h2>Search</h2>
+    
+      <div class="container-dark-mode">
+        <p aria-hidden="true">Dark Mode</p>
+        <button class="dark-mode-button" role="switch" aria-label="Dark Mode" aria-checked="false">
+          <span></span>
+        </button>
+      </div>
+    </div>
+    
+    <form id="search-form" class="search-form">      
+      <fieldset class="fieldset input-text" title="Búsqueda por texto" role="search">
+        <label for="search-input">
+          <input type="search" placeholder="Ingresá tu búsqueda" name="q" id="search-input"/>
+
+          <div class="icon-container">
+            <i class="fas fa-search" aria-hidden="true"></i>
+          </div>
+        </label>
+      </fieldset>
+
+      <fieldset class="fieldset selects-options" title="Opciones de búsquedas">
+        <label for="search-type">
+          TYPE
+          <select name="search-type" id="search-type">
+            <option value="comics" selected>COMICS</option>
+            <option value="characters">CHARACTERS</option>
+          </select>
+        </label>
+
+        <label for="search-sort"  aria-live="polite" aria-label="Sort comics by">
+          ORDER
+          <select name="search-sort" id="search-sort">
+            <option value="title" selected>A - Z</option>
+            <option value="-title">Z - A</option>
+            <option value="-focDate">Latest</option>   
+            <option value="focDate">Oldest</option>
+          </select>
+        </label>
+      </fieldset>
+
+      <button id="search-button" class="search-button button">SEARCH</button>
+
+    </form>
+
+    <section class="search-result">
+      
+    </section>
+
+
+    <h2 id="title-results-section">Results</h2>
+    <p class="total-results" id="total-results">0 RESULTS</p>
+
+    <section id="results" class="results">
+
+    </section>
+
+    <nav class="pagination-container" aria-label="Paginación">
+      <ul>
+        <li>
+          <button id="first-page" class="pagination button" aria-label="Go to first page">
+            <i class="fas fa-angle-double-left" aria-hidden="true"></i>
+          </button>
+        </li>
+        <li>
+          <button id="previous-page" class="pagination button" aria-label="Go to previous page">
+            <i class="fas fa-angle-left" aria-hidden="true"></i>
+          </button>
+        </li>
+        <li>
+          <button id="next-page" class="pagination button" aria-label="Go to next page">
+            <i class="fas fa-angle-right" aria-hidden="true"></i>
+          </button>
+        </li>
+        <li>
+          <button id="last-page-btn" class="pagination button" aria-label="Go to last page">
+            <i class="fas fa-angle-double-right" aria-hidden="true"></i>
+          </button>
+        </li>
+      </ul>
+      <p>Page <span id="current-page"></span> of <span id="last-page"></span> </p>
+    </nav>
+
+    <div class="overlay hidden" role="alertdialog" aria-modal="true" aria-label="Loading results">
+      <div class="loader" aria-labelledby="results"></div>
+    </div>
+    
+
+  </main>
+
+  <footer>
+    <p>Built with 💚 by Paula</p>
+    <div class="contact-links">
+      <a href="https://www.linkedin.com/in/paula-laclau" aria-label="Paula's LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+      <a href="https://github.com/laclaupau" target="_blank" aria-label="Paula's GitHub"><i class="fab fa-github-square" aria-hidden="true"></i></a>
+      <a href="mailto:laclaumpaula@gmail.com" target="_blank" aria-label="Paula's E-mail"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+    </div>
+  </footer>
+
+
+  <script src="index.js"></script>
+</body>
+</html>

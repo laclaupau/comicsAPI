@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: $text-typograhy;
+    outline-color: $detail-color;
+  }
+  
+  body {
+    color: $main-color;
+    transition: $dark-mode-transition;
+  }
+  
+  // DARK MODE //
+  .dark-mode {
+    background-color: $dark-mode-background-color;
+    color: $dark-mode-main-color;
+    transition: $dark-mode-transition;
+   
+    p,.selects-options label, .search-info .return {
+      color: $dark-mode-secondary-color;
+    }
+  
+    input[type=search], input[type=search]::placeholder {
+      background-color: $dark-mode-background-color;
+      transition: $dark-mode-transition;
+      color: $dark-mode-secondary-color;
+    }
+  
+    button {
+      border: 1px solid $dark-mode-main-color
+    }
+  
+    .overlay {
+      background-color: rgba(47, 52, 55, .8);
+    }
+  }

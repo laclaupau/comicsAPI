@@ -1,0 +1,32 @@
+.overlay {
+    background-color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    top: -60px;
+    bottom: -80px;
+    left: -75px;
+    right: -75px;
+  
+    @extend %flex-center-center;
+  
+    @media (max-width: $medium-breakpoint) {
+      top: -40px;
+      bottom: -40px;
+      left: -20px;
+      right: -20px;
+    }
+  
+    .loader {
+      border: 8px solid transparent;
+      border-top: 8px solid $detail-color;
+      border-bottom: 8px solid $detail-color;
+      border-radius: 50%;
+      @include size(80px, 80px);
+      animation: spin 1.5s linear infinite;
+     
+    }
+  
+    @keyframes spin {
+      100% { transform: rotate(360deg); }
+    }
+  
+  }

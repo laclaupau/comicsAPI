@@ -1,0 +1,32 @@
+.pagination-container {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    align-self: center;
+    
+  
+    ul {
+      @extend %flex-space-between-center;
+      width: 100%;
+  
+      li {
+        list-style: none;
+        
+        .pagination {
+          @extend %flex-center-center;
+          @include size(35px, 35px);
+          font-size: 24px;
+  
+          i {
+            color: $secondary-detail-color;
+          }
+        }
+      }
+    }
+  
+    p {
+      @extend %secondary-typography-style;
+      align-self: center;
+      margin-top: 20px;
+    }
+  }

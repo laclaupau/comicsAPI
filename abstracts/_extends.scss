@@ -1,0 +1,27 @@
+%flex-space-between-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  %secondary-typography-style {
+    font-size: $small-font-size;
+    color: $secondary-color;
+    font-weight: 700;
+  }
+  
+  %flex-center-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  %flex-column {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  %flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+  }

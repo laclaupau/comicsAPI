@@ -1,0 +1,37 @@
+.comic-card {
+    @include card-container(calc(100% / 5 - 2 * 10px));
+    
+    .comic-img-container {    
+      margin-bottom: 20px;
+  
+      .comic-img {
+        @include card-img (100%, auto, translateY(0));
+        box-shadow: 0 26px 24px -16px rgba(0, 0, 0, 0.4);
+      }
+    }
+  
+    .comic-title {
+      @include card-text(10px, 10px, 30px);
+    }
+  
+  
+    &:hover, &:focus {
+      .comic-img-container {
+        .comic-img {
+          transform: translateY(-10px);
+        }
+      }
+  
+      .comic-title {
+        color: $detail-color;
+      }
+    }
+  
+    @media (max-width: $medium-breakpoint) {
+      width: calc(100% / 3 - 2 * 10px);    
+    }
+  
+    @media (max-width: $xsmall-breakpoint) {
+      width: 250px;
+    }
+  }

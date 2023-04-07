@@ -1,0 +1,29 @@
+footer {
+    @extend %flex-column;
+    align-items: center;
+    background-color: $main-color;
+    padding: 35px;
+    
+    p {
+      color: $secondary-detail-color;
+    }
+    
+    .contact-links {
+      width: 100px;
+      padding-top: 10px;
+      @extend %flex-space-between-center;
+  
+      a {
+        padding: 5px;
+  
+        &:hover, &:visited {
+          color: $detail-color;
+        }
+  
+        i {
+          color: $secondary-detail-color;
+          font-size: 22px;
+        }
+      }
+    }
+  }

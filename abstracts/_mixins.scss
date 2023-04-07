@@ -1,0 +1,35 @@
+@mixin size ($width, $height) {
+    width: $width;
+    height: $height;  
+  }
+  
+  @mixin card-container ($width) {
+    @extend %flex-column;
+    width: $width;
+    margin: $card-margin;
+    cursor: pointer;
+    outline: none;
+  
+    &:focus {
+      box-shadow: 0 0 8px 3px $detail-color;
+    }
+  }
+  
+  @mixin card-img ($width, $height, $transform) {
+    @include size(100%, 100%);
+    transition: $card-transition;
+    transform: $transform;
+  }
+  
+  @mixin card-text ($ptop, $prl, $pbottom){
+    padding: $ptop $prl $pbottom;
+    font-size: $small-font-size;
+    transition: $card-transition;
+  }
+  
+  @mixin before-and-after-position ($value) {
+    content: $value;
+    font-size: 10px;
+    position: absolute;
+    top: 5px;
+  }
